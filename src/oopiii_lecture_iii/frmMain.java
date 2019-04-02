@@ -323,8 +323,8 @@ public class frmMain extends javax.swing.JFrame {
     }//GEN-LAST:event_recordSelectedChanged
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
-        // TODO add your handling code here:
-         String strSurname = txtSurname.getText().trim();
+
+        String strSurname = txtSurname.getText().trim();
         String strOthername = txtOthername.getText().trim();
         String strSex;
         
@@ -368,7 +368,7 @@ public class frmMain extends javax.swing.JFrame {
             
             pSt.execute();
             
-            JOptionPane.showMessageDialog(this, "Student Successfully Saved!");
+            JOptionPane.showMessageDialog(this, "Student Successfully Updated!");
             
             txtSurname.setText("");
             txtOthername.setText("");
